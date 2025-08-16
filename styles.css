@@ -13,13 +13,13 @@
 }
 
 .Home{
-    color: black;
+    color: white;
     text-align: left;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 ul{
@@ -37,3 +37,77 @@ p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+h2{
+    color: whitesmoke;
+    text-align: center;
+}
+
+h3{
+    color: white;    
+}
+
+
+.product-box1{
+    display: inline-flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    
+    
+}
+.product-box2{
+    display: inline-flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    
+}
+.product-box3{
+    display: inline-flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+   
+}
+.product-box4{
+    display: inline-flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+    
+}
+
+.product-box1 img{
+    max-width: 50%;
+    
+}
+.product-box2 img{
+    max-width: 100%;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.product-box3 img{
+    max-width: 100%;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.product-box4 img{
+    max-width: 100%;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+.product-title{
+    margin-top: 5px;
+    font-weight: bold;
+}
