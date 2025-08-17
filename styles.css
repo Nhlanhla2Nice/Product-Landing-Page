@@ -53,10 +53,11 @@ h3{
 .product-box{
     display: flex;
     align-items: flex-start;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     border: 20px solid rgba(255, 255, 255, 0.534);
-    border-width: 80%;
+    width: fit-content;
     padding: 10px;
+    max-width: 600px;
 }
 
 
@@ -66,16 +67,50 @@ h3{
     height: auto;
     max-width: 200px;
     margin-bottom: 10px;
+    margin-right: 15px;
 }
 
 .product-title{
     margin-top: 5px;
     font-weight: bold;
+    text-align: center;
 }
 
 .product1{
     flex-grow: 1;
-    text-align: right;
+    text-align: left;
     padding-right: 25%;
     box-sizing: border-box;
+}
+
+.cta-box{
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.price-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.availability{
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10ox;
+}
+
+.cta-button{
+    background-color: whitesmoke;
+    color: Black;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
 }
