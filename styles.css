@@ -115,3 +115,34 @@ h3{
     padding-block: 10px;
 }
 
+@media (max-width: 1024px) {
+    .product1 {
+        padding-right: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    .ProductGrid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-box {
+        width: 90%;
+        max-width: 90%;
+        padding: 15px;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .product-box img {
+        max-width: 150px;
+        margin: 0 auto 10px auto;
+        display: block;
+    }
+
+    .product1 {
+        padding-right: 0;
+    }
+}
+
