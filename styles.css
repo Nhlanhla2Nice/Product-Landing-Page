@@ -1,6 +1,4 @@
-@media (max-width: 768px) {
-     
-}
+
 .Container{
     font-family: fantasy;   
     border-style: solid;
@@ -16,13 +14,13 @@
 }
 
 .Home{
-    color: white;
+    color: black;
     text-align: left;
 }
 
 a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 ul{
@@ -36,28 +34,39 @@ li{
 }
 
 p{
-    color: whitesmoke;
+    color: Black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h2{
-    color: whitesmoke;
+    color: black;
     text-align: center;
 }
 
 h3{
-    color: white;    
+    color: black;    
 }
 
+.ProductGrid{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
 
 .product-box{
-    display: flex;
-    align-items: flex-start;
+    display: inline-block;
     margin-bottom: 10px;
-    border: 20px solid rgba(255, 255, 255, 0.534);
     width: fit-content;
-    padding: 10px;
+    padding: 20px;
     max-width: 600px;
+    margin: 10px;
+    flex: 1;
+    background: rgba(225, 225, 225, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 225, 0.3);
 }
 
 
@@ -83,34 +92,13 @@ h3{
     box-sizing: border-box;
 }
 
-.cta-box{
-    margin-left: 20px;
-    border: 1px solid #ccc;
-    padding: 20px;
-    text-align: center;
+.fade-in{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease;
 }
 
-.price-value {
-  font-size: 2rem;
-  font-weight: bold;
-  color: white;
-}
-
-.availability{
-    color: white;
-    font-weight: bold;
-    margin-bottom: 10ox;
-}
-
-.cta-button{
-    background-color: whitesmoke;
-    color: Black;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    width: 100%;
+.fade-in.visible{
+    opacity: 1;
+    transform: translateY(0);
 }
