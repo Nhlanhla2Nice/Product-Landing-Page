@@ -146,3 +146,27 @@ h3{
     }
 }
 
+@media (max-width: 768px) {
+    .Container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+        padding: 10px;
+    }
+
+    ul {
+        flex-direction: column; /* Navbar links stacked vertically */
+        padding: 0;
+        margin: 10px 0 0 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    li {
+        margin: 10px 0; /* Space between links */
+    }
+
+    .Home {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
